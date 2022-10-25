@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { XwingComponent } from './xwing.component';
+import { HardysoftComponent } from './hardysoft.component';
 
-describe('XwingComponent', () => {
-  let component: XwingComponent;
-  let fixture: ComponentFixture<XwingComponent>;
+describe('HardysoftComponent', () => {
+  let component: HardysoftComponent;
+  let fixture: ComponentFixture<HardysoftComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ XwingComponent ]
+      declarations: [ HardysoftComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(XwingComponent);
+    fixture = TestBed.createComponent(HardysoftComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
