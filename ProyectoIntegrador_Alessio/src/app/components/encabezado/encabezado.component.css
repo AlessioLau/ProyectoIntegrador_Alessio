@@ -1,0 +1,39 @@
+#logoAP{
+    width: 150px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social, .boton{
+    margin-right: 10px;
+}
+
+
+img{
+    width: 50px;
+    margin: 5px;
+}
+
+.btn{
+    border-width: medium;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 575px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .social, .boton{
+        display: flex;
+        align-items: center;
+    }
+    
+    .social img, .boton{
+        margin: 10px
+    }
+}
