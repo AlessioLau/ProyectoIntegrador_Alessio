@@ -2,11 +2,16 @@ div{
     background-color: #387d8b;
 }
 
-.row{
+.row, table{
     padding: 20px;
     color: #fefefe;
 }
 
 h2, h3{
     display: inline;
+}
+
+img{
+    width: 20px;
+    margin: 5px;
 }

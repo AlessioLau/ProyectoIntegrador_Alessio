@@ -1,20 +1,22 @@
 <div class="row">
-    <h1>Educación</h1>
-    <div class = "col-lg-1"></div>
-    <div class = "col-lg-11">
-        <ul>
-            <li>
-                <h2>Estudio 1</h2> <h3> (años)</h3>
-                <p>(texto)</p>
-            </li>
-            <li>
-                <h2>Estudio 2</h2> <h3> (años)</h3>
-                <p>(texto)</p>
-            </li>
-            <li>
-                <h2>Estudio 3</h2> <h3> (años)</h3>
-                <p>(texto)</p>
-            </li>
-        </ul>
+    <h1>Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
     </div>
-</div>
+
+    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+    <div class="col-lg-11 col-md-11 col-sm-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of exp">
+                    <td><h2>{{Educacion.nombreE}}</h2></td>
+                    <td><h5>{{Educacion.descripcionE}}</h5></td>
+                    <td *ngIf="isLogged" ><button class="btn btn-success" routerLink="/editaredu/{{Educacion.id}}"> <img src="../../../assets/lapiz.png">Editar </button></td>
+                    <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Educacion.id)"> <img src="../../../assets/tacho de basura.png">Borrar</button></td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+    </div>
